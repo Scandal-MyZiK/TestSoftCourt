@@ -1,0 +1,124 @@
+.header {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../image/header-bg.png);
+  &__center {
+    padding: 146px 0 0;
+  }
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #272733;
+    text-transform: uppercase;
+    max-width: 740px;
+    &--blue {
+      color: #42a9ed;
+    }
+  }
+  &__info {
+    margin-top: 70px;
+  }
+  &__text {
+    font-size: 20px;
+    color: #2a2b30;
+    font-weight: 700;
+  }
+  &__content {
+    margin: 8px 0 74px;
+    font-size: 20px;
+    color: #2a2b30;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &__desc {
+    display: flex;
+    align-items: center;
+    &::before {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 6px;
+      background-color: #2a2b30;
+      margin-right: 6px;
+    }
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+  &__link-button {
+    display: block;
+    max-width: 183px;
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    background-color: #3e9cdc;
+    padding: 14px;
+    font-size: 13px;
+    letter-spacing: 0.33px;
+    text-align: center;
+    transition: 0.3s;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      background-color: #42a9ed;
+    }
+    &--white {
+      border: 1px solid #6f6d7b;
+      background-color: #fff;
+      color: #2a2b30;
+      &:hover {
+        background-color: #6f6d7b;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.header-menu {
+  padding: 40px 0;
+  background-color: rgba(16, 16, 29, 0.9);
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1;
+    color: #fff;
+    text-transform: uppercase;
+    &--blue {
+      color: #42a9ed;
+    }
+  }
+}
+
+.header-nav {
+  &__list {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+  &__link {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.33px;
+    color: #fff;
+    transition: 0.3s;
+    &:hover {
+      color: #42a9ed;
+    }
+    &--blue {
+      color: #42a9ed;
+    }
+  }
+}
